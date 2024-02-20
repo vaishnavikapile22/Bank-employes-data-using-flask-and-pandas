@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 import pandas as pd
 
 app = Flask(__name__)
-df = pd.read_excel('C:\\Users\\Admin\\PycharmProjects\\mycv\\Bank_Employees.xlsx')
+df = pd.read_excel('Bank_Employees.xlsx')
 
 @app.route('/')
 def index():
